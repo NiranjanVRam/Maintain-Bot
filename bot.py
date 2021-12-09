@@ -23,15 +23,20 @@ updatesc = os.environ["UPDATES_CHANNEL"]
 supportc = os.environ["SUPPORT_CHAT"]
 
 BOT_TEXT = """
-Hai {} , This Bot Is Under Maintenance.
+Hey {} , This Bot Is Under Maintenance.
 
-You Can't Use This Bot Right Now.You Will Get a Message On This Bot's Channel If This Bot Is Ready To Work.
+You Can't Use This Bot Right Now. You May Get a Message Once This Bot Is Ready To Work.
+
+For Any Further Queries, Contact Support
+Will Be Back Soon After Some Updates...
+
+Powered By @fileshomeofficial
 """
 
 BOT_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="Channel", url=f"https://telegram.me/{updatesc}"),
+            InlineKeyboardButton(text="❤️ Channel", url=f"https://telegram.me/{updatesc}"),
             InlineKeyboardButton(text="Support", url=f"https://telegram.me/{supportc}"),
         ]
     ]
@@ -48,7 +53,7 @@ async def start(bot, update):
 
 print(
     """
-Bot Started!!! Now Join on @Vkprojects
+Bot Started!!! Now Join @fhmoviechat | @fhserieschat
 """
 )
 
